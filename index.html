@@ -8,6 +8,61 @@
         <script src="app.js"></script>
     </head>
     <body>  
+        <div class='first'>
+            <h1 id="head"> 自走車體驗區 </h1>
+        </div>
 
+        <div class='boxies'>
+            <div id ="w1">
+              <div class='car-group'>
+                <a onclick="input_id1()">
+                  <img src="img/carid.png" id='carid-img'>
+                </a>
+              </div>
+            </div>
+
+            <div id ="w1">
+                <div class='car-group'>
+                  <a onclick="input_id2()">
+                    <img src="img/carid.png" id='carid-img'>
+                  </a>
+                </div>
+              </div>
+
+            <div id ="w3">
+              <div class='car-group'>
+                <a href="../demo1/demo.html">
+                  <img src="img/car1.png" id='car1-img'>
+                </a>
+              </div>
+            </div>
+          
+            <div id ="w4">
+              <div class='car-group'>
+                <a href="../demo2/demo.html">
+                  <img src="img/car2.png" id='car2-img'>
+                </a>
+              </div>
+            </div>
+          
+        </div>
     </body>
+
+    <script>
+        function input_id1(){
+          var id = prompt("請輸入開發版 ID :", "devide id");
+          if (id != null) {
+            alert("你的 device id 為 ：" + id)
+            location.href="car_web/car.html?" + "device_id=" + encodeURI(id);
+          }
+        }
+
+        function input_id2(){
+          var id = prompt("請輸入開發版 ID :", "devide id");
+          if (id != null) {
+            alert("你的 device id 為 ：" + id)
+            location.href="car_phone/car.html?" + "device_id=" + encodeURI(id);
+          }
+        }
+    </script>
 </html>
