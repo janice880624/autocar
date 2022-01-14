@@ -31,8 +31,18 @@ html,body{
     fill:#403F3E;
 }
 
-.st3_add, .st3_less{
+.st3_less{
     fill:#F0919B;
+    stroke:#000000;
+    stroke-width:2;
+    stroke-miterlimit:10;
+}
+
+.st3_add{
+    fill:#7FCCF2;
+    stroke:#000000;
+    stroke-width:2;
+    stroke-miterlimit:10;
 }
 
 
