@@ -7,33 +7,37 @@
 }
 
 #device_id {
-margin-bottom: 5px;
+    margin-bottom: 5px;
 }
 
 #demo_img {
-width: 50%;
+    width: 50%;
 }
 
 #demo-group{
-text-align: center;
-border:2.5px #7d54db solid;
-margin: 10px 10%;
-padding-bottom: 5px;
-border-radius: 5px;
+    text-align: center;
+    border:2.5px #7d54db solid;
+    margin: 10px 10%;
+    padding-bottom: 5px;
+    border-radius: 5px;
 }
 
 #demo_btn, #test_button{
-font-size: 20px;
-border-radius: 3px;
+    font-size: 20px;
+    border-radius: 3px;
 }
 
 #input {
-font-size: 20px;
-font-family:monospace;
+    font-size: 20px;
+    font-family:monospace;
+}
+
+#footer-p{
+    font-family:monospace;
 }
 
 #demo_btn{
-margin: 10px 0px;
+    margin: 10px 0px;
 }
 
 /* #carid-img, #car1-img, #car2-img, #car3-img{
@@ -44,85 +48,159 @@ margin: 20px 10px;
 } */
 
 .boxies{
-display: flex;
-justify-content: space-evenly ;
-/* flex-direction: column;  手機 */
-flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly ;
+    /* flex-direction: column;  手機 */
+    flex-wrap: wrap;
 }
 
 .first{
-background-color: #2c3e50;
-width: 100%;
+    background-color: #2c3e50;
+    width: 100%;
 }
 
 #head{
-margin: 5px 0px;
-text-align: center;
-letter-spacing: 10px;
-color: #fff;
-font-size: 25px;
-padding: 5px 0px;
-margin: 0px;
+    margin: 5px 0px;
+    text-align: center;
+    letter-spacing: 10px;
+    color: #fff;
+    font-size: 25px;
+    padding: 5px 0px;
+    margin: 0px;
 }
 
 body{
-margin: 0px;
-padding: 0px;
-background-color: #d5d5d5;
+    margin: 0px;
+    padding: 0px;
+    background-color: #d5d5d5;
 }
 
 @media (min-width: 300px) {
 
-#carid-img, #car1-img, #car2-img, #car3-img{
-    width: 100%;
-    border-radius: 50%;
-    border: 1px solid #2c3e50;
-    margin: 10px 0px;
-}
+    footer{
+        background-color: #2c3e50;
+        height: 25px;
+        box-sizing: border-box;
+        /* position: absolute; */
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    #footer-p{
+        text-align: center;
+        letter-spacing: 3px;
+        color: #fff;
+        font-size: 10px;
+    }
 
-.boxies{
-    margin: 10px;
-}
+    #carid-img, #car1-img, #car2-img, #car3-img{
+        width: 100%;
+        border-radius: 50%;
+        border: 1px solid #2c3e50;
+        margin: 10px 0px;
+    }
+
+    .boxies{
+        margin: 10px;
+    }
 }
 
 @media (min-width: 900px) {
 
-#carid-img, #car1-img, #car2-img, #car3-img{
-    width: 400px;
-    border-radius: 50%;
-    border: 1px solid #2c3e50;
-    margin: 10px 0px;
-}
+    footer{
+        background-color: #2c3e50;
+        margin: 0px 0px;
+        padding: 1px 0px;
+        height: 25px;
+        box-sizing: border-box;
+        /* position: absolute; */
+        bottom: 0;
+        width: 100%;
+    }
+    
+    #footer-p{
+        margin: 5px 0px;
+        text-align: center;
+        letter-spacing: 5px;
+        color: #fff;
+        font-size: 10px;
+    }
 
-.boxies{
-    margin: 10px;
-}
+    #carid-img, #car1-img, #car2-img, #car3-img{
+        width: 400px;
+        border-radius: 50%;
+        border: 1px solid #2c3e50;
+        margin: 10px 0px;
+    }
+
+    .boxies{
+        margin: 10px;
+    }
 }
 
 @media (min-width: 1200px) {
 
-#carid-img, #car1-img, #car2-img, #car3-img{
-    width: 400px;
-    border-radius: 50%;
-    border: 1px solid #2c3e50;
-    margin: 10px 0px;
-}
+    footer{
+        background-color: #2c3e50;
+        margin: 0px 0px;
+        padding: 1px 0px;
+        height: 25px;
+        box-sizing: border-box;
+        /* position: absolute; */
+        bottom: 0;
+        width: 100%;
+    }
+    
+    #footer-p{
+        margin: 5px 0px;
+        text-align: center;
+        letter-spacing: 5px;
+        color: #fff;
+        font-size: 10px;
+    }
 
-.boxies{
-    margin: 10px;
-}
+    #carid-img, #car1-img, #car2-img, #car3-img{
+        width: 400px;
+        border-radius: 50%;
+        border: 1px solid #2c3e50;
+        margin: 10px 0px;
+    }
+
+    .boxies{
+        margin: 10px;
+    }
 }
 
 @media (min-width: 1800px) {
 
-#carid-img, #car1-img, #car2-img, #car3-img{
-    width: 400px;
-    border-radius: 50%;
-    border: 1px solid #2c3e50;
-    margin: 10px 0px;
-}
+    footer{
+        background-color: #2c3e50;
+        margin: 0px 0px;
+        padding: 1px 0px;
+        height: 25px;
+        box-sizing: border-box;
+        /* position: absolute; */
+        bottom: 0;
+        width: 100%;
+    }
+    
+    #footer-p{
+        margin: 5px 0px;
+        text-align: center;
+        letter-spacing: 5px;
+        color: #fff;
+        font-size: 10px;
+    }
 
-.boxies{
-    margin: 10px;
-}
+    #carid-img, #car1-img, #car2-img, #car3-img{
+        width: 400px;
+        border-radius: 50%;
+        border: 1px solid #2c3e50;
+        margin: 10px 0px;
+    }
+
+    .boxies{
+        margin: 10px;
+    }
 }
