@@ -1,3 +1,10 @@
+let loc = location.href;
+let n1 = loc.length; //地址的總長度 
+let n2 = loc.indexOf("="); //取得=號的位置
+let device_id = decodeURI(loc.substr(n2+1, n1-n2)); //從=號後面的内容
+alert("Device ID:" + device_id); 
+console.log('=> ' + device_id);
+
 // 車子控制
 let car;
 let speed;
@@ -44,7 +51,7 @@ function deviceIsConnected() {
 }
 
 // car demo 1
-boardReady({board: 'Smart', device: 'gQn32', transport: 'mqtt'}, function (board) {
+boardReady({board: 'Smart', device: device_id, transport: 'mqtt'}, function (board) {
   board.samplingInterval = 50;
   car = getToyCar(board, 14, 16, 2, 5);
   speed = 100;
