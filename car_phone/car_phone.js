@@ -1,22 +1,14 @@
 let loc = location.href;
-let n1 = loc.length; 
-let n2 = loc.indexOf("="); 
-let device_id = decodeURI(loc.substr(n2+1, n1-n2));
+let n1 = loc.length; //地址的總長度 
+let n2 = loc.indexOf("="); //取得=號的位置
+let device_id = decodeURI(loc.substr(n2+1, n1-n2)); //從=號後面的内容
 alert("Device ID:" + device_id); 
+document.write("device_id:" + device_id)
 console.log('=> ' + device_id);
 
 // 車子控制
 let car;
 let speed;
-let BoardEvent = webduino.BoardEvent;
-let st7_connect = document.getElementById('st7_connect');
-
-let board = new webduino.WebArduino({
-  device: device_id,
-  initialReset: false,
-  handleDigitalPins: false,
-  multi: true
-});
 
 function getElement(dom) {
   let element = document.querySelector(dom);
@@ -42,15 +34,24 @@ function controllerBtnEvent(c, e, callback) {
   }
 }
 
-window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", function() {
-  if (window.orientation === 180 || window.orientation === 0) {
-      alert('目前您的螢幕為縱向！');
-  }
-  if (window.orientation === 90 || window.orientation === -90 ){
-      alert('目前您的螢幕為橫向！');
-  }
-}, false);
+function deviceIsConnected() {
+  let st0 = document.querySelector('.st0');
 
+  if (myBoard === undefined) {
+    st0.style.fill = "#464544";
+    return false;
+  }
+  else if (myBoard.isConnected === undefined) {
+    st0.style.fill = "#464544";
+    return false;
+  }
+  else {
+    st0.style.fill = "#9AFF9A";
+    return myBoard.isConnected;  
+  }
+}
+
+// car demo 1
 boardReady({board: 'Smart', device: device_id, transport: 'mqtt'}, function (board) {
   board.samplingInterval = 50;
   car = getToyCar(board, 14, 16, 2, 5);
@@ -113,5 +114,5 @@ boardReady({board: 'Smart', device: device_id, transport: 'mqtt'}, function (boa
     car.stop();
   });
 
+ 
 });
-
