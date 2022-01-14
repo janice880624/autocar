@@ -1,73 +1,76 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> 自走車體驗 </title>
-        <link rel="stylesheet" href="styles.css">
-        <script src="app.js"></script>
-    </head>
-    <body>  
-        <div class='first'>
-            <h1 id="head"> 自走車體驗區 </h1>
-        </div>
 
-        <div class='boxies'>
-            <div id ="w1">
-              <div class='car-group'>
-                <a onclick="input_id1()">
-                  <img src="img/car_phone.png" id='carid-img'>
-                </a>
-              </div>
-            </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> 自走車體驗 </title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js"></script>
+</head>
 
-            <div id ="w1">
-                <div class='car-group'>
-                  <a onclick="input_id2()">
-                    <img src="img/carid.png" id='carid-img'>
-                  </a>
-                </div>
-              </div>
+<body>
+  <div class='first'>
+    <h1 id="head"> 自走車體驗區 </h1>
+  </div>
 
-            <div id ="w3">
-              <div class='car-group'>
-                <a href="car_demo1/demo.html">
-                  <img src="img/car1.png" id='car1-img'>
-                </a>
-              </div>
-            </div>
-          
-            <div id ="w4">
-              <div class='car-group'>
-                <a href="car_demo2/demo.html">
-                  <img src="img/car2.png" id='car2-img'>
-                </a>
-              </div>
-            </div>
-          
-        </div>
+  <div class='boxies'>
+    <div id="w1">
+      <div class='car-group'>
+        <a onclick="input_id1()">
+          <img src="img/car_phone.png" id='carid-img'>
+        </a>
+      </div>
+    </div>
 
-        <!-- <footer>
+    <div id="w1">
+      <div class='car-group'>
+        <a onclick="input_id2()">
+          <img src="img/carid.png" id='carid-img'>
+        </a>
+      </div>
+    </div>
+
+    <div id="w3">
+      <div class='car-group'>
+        <a href="car_demo1/demo.html">
+          <img src="img/car1.png" id='car1-img'>
+        </a>
+      </div>
+    </div>
+
+    <div id="w4">
+      <div class='car-group'>
+        <a href="car_demo2/demo.html">
+          <img src="img/car2.png" id='car2-img'>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- <footer>
           <p id="footer-p"> © 2022 Janice All rights reserved</p>
         </footer> -->
 
-    </body>
+</body>
 
-    <script>
-        function input_id1(){
-          var id1 = prompt("請輸入開發版 ID :", "devide id");
-          if (id1 != null) {
-            alert("你的 device id 為 ：" + id1)
-            location.href="car_web/car_web.html?" + "device_id=" + encodeURI(id1);
-          }
-        }
+<script>
+  function input_id1() {
+    var id1 = prompt("請輸入開發版 ID :", "devide id");
+    if (id1 != null) {
+      alert("你的 device id 為 ：" + id1)
+      location.href = "car_web/car_web.html?" + "device_id=" + encodeURI(id1);
+    }
+  }
 
-        function input_id2(){
-          var id2 = prompt("請輸入開發版 ID :", "devide id");
-          if (id2 != null) {
-            alert("你的 device id 為 ：" + id2)
-            location.href="car_phone/car_phone.html?" + "device_id=" + encodeURI(id2);
-          }
-        }
-    </script>
+  function input_id2() {
+    var id2 = prompt("請輸入開發版 ID :", "devide id");
+    if (id2 != null) {
+      alert("你的 device id 為 ：" + id2)
+      location.href = "car_phone/car_phone.html?" + "device_id=" + encodeURI(id2);
+    }
+  }
+</script>
+
 </html>
