@@ -13,7 +13,7 @@ html,body{
 
 .st0{
     opacity:0.92;
-    fill:#464544;
+    fill:#666666;
     stroke:#231815;
     stroke-width:3;
     stroke-miterlimit:10;
@@ -46,6 +46,13 @@ html,body{
 
 .st5_front:active, .st5_back:active, .st5_right:active, .st5_left:active, .st5_stop:active, .st3_add:active, .st3_less:active{
     fill:#9AFF9A;
+}
+
+.st3_less, .st3_add{
+    fill:#F0919B;
+    stroke:#000000;
+    stroke-width:2;
+    stroke-miterlimit:10;
 }
 
 .st6{
@@ -102,22 +109,6 @@ html,body{
     background:rgb(26, 155, 187);
 }
 
-@media (max-width:480px){
-    .btn{
-        height:50px;
-        line-height:50px;
-        font-size:20px;
-    }
-}
-
-@media (max-width:400px){
-    .btn{
-        height:45px;
-        line-height:45px;
-        font-size:18px;
-    }
-}
-
 .btn-group{
     width:100%;
     text-align:center;
@@ -132,16 +123,3 @@ html,body{
     line-height:80px;
 }
 
-@media (max-width:480px){
-    .btn-group.direction .btn{
-        height:70px;
-        line-height:70px;
-    }
-}
-
-@media (max-width:400px){
-    .btn-group.direction .btn{
-        height:60px;
-        line-height:60px;
-    }
-}
